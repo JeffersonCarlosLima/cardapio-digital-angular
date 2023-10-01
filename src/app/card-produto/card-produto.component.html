@@ -1,5 +1,9 @@
-<div class="card">
+<div class="card" *ngFor="let card of cards">
     <div class="containerimgcard">
-        <img src="" alt="" class="img-thumbnail">
+        <img src="{{card.img}}" alt="foto generica" class="img-thumbnail">
+    </div>
+    <div>
+        <h3 class="titulo">{{card.titulo}}</h3>
+        <p class="descricao">{{card.descricao}}</p>
     </div>
 </div>
